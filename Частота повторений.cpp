@@ -34,12 +34,12 @@ int main() {
   map<string, int> pairCount;
 
   for (size_t index = 0; index + 1 < text.size(); ++index) {
-    if (isalpha(text[index]) && isalpha(text[indexi + 1])) {
-      char c1 = tolower(text[index]);
-        char c2 = tolower(text[index + 1]);
+    if (isalpha(text[index]) && isalpha(text[index + 1])) {
+      char firstChar = tolower(text[index]);
+        char secondChar = tolower(text[index + 1]);
           string pair = "";
-          pair += c1;
-          pair += c2;
+          pair += firstChar;
+          pair += secondChar;
           pairCount[pair]++;
     }
   }
@@ -57,3 +57,4 @@ int main() {
   return 0;
 
 }
+
